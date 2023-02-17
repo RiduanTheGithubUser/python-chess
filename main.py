@@ -9,6 +9,13 @@
 #                     game
 #----------------------------------------------
 
+from chessPieces.pawn import Pawn
+from chessPieces.knight import Knight
+from chessPieces.bishop import Bishop
+from chessPieces.rook import Rook
+from chessPieces.queen import Queen
+from chessPieces.king import King
+
 class Chess():
   def __init__(self):
     self.ToMove = "White"
@@ -38,4 +45,8 @@ class Pieces():
   
   def legalizeMoves(self):
     # here you can add to the legal moves
+    pass
+
+  def initialize(self, type):
+    # check what type is the piece
     pass
